@@ -1,0 +1,161 @@
+/* ============================================================
+   Dr. Honey Yadav — Academic Portfolio
+   css/responsive.css — Responsive Breakpoints
+   ============================================================ */
+
+/* ── Large Desktop ≤ 1440px ─────────────────────────────────── */
+@media (max-width: 1440px) {
+  h1 { font-size: 2.9rem; }
+  .hero-portrait-placeholder,
+  .hero-portrait { width: 300px; height: 300px; }
+  .chip-iit  { left: -5%; }
+  .chip-bcu  { right: -2%; }
+  .chip-ukri { left: -5%; }
+}
+
+/* ── Laptop ≤ 1200px ─────────────────────────────────────────── */
+@media (max-width: 1200px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.9rem; }
+
+  .nav-links a { font-size: .78rem; padding: .4rem .55rem; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .expertise-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero-portrait-placeholder,
+  .hero-portrait { width: 260px; height: 260px; }
+
+  .chip-iit, .chip-bcu, .chip-ukri { display: none; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-grid > *:first-child { grid-column: span 2; }
+}
+
+/* ── Tablet ≤ 992px ──────────────────────────────────────────── */
+@media (max-width: 992px) {
+  html { font-size: 17px; }
+
+  /* Nav: hide links, show toggle */
+  .nav-links { display: none; }
+  .nav-socials, .nav-divider { display: none; }
+  .nav-toggle { display: flex; }
+
+  /* Hero stacks */
+  #hero { padding: 4rem 0 3rem; min-height: auto; }
+  #hero .row { flex-direction: column-reverse; }
+  .hero-portrait-wrap { margin-bottom: 2.5rem; }
+  .hero-statement { max-width: 100%; }
+
+  /* Portrait smaller on tablet */
+  .hero-portrait-placeholder,
+  .hero-portrait { width: 220px; height: 220px; }
+  .hero-portrait-ring::before, .hero-portrait-ring::after { display: none; }
+
+  /* About stacks */
+  #about .row { flex-direction: column; }
+  .about-img-wrap { margin-bottom: 3rem; }
+  .about-credential { right: 1rem; bottom: -1rem; }
+
+  /* Grids → 2-col */
+  .research-grid { grid-template-columns: 1fr; }
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Impact */
+  #impact .row { flex-direction: column; }
+  .impact-keywords { margin-top: 2rem; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .footer-grid > *:first-child { grid-column: span 1; }
+}
+
+/* ── Mobile ≤ 768px ──────────────────────────────────────────── */
+@media (max-width: 768px) {
+  html { font-size: 16px; }
+
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.6rem; }
+  h3 { font-size: 1.2rem; }
+
+  .section-header { margin-bottom: 2rem; }
+
+  #hero { padding: 3rem 0 2.5rem; }
+  .hero-actions { gap: .5rem; }
+  .hero-actions .btn-primary-custom,
+  .hero-actions .btn-outline-custom,
+  .hero-actions .btn-ghost-custom {
+    font-size: .82rem;
+    padding: .62rem 1.1rem;
+  }
+
+  .hero-portrait-placeholder,
+  .hero-portrait { width: 180px; height: 180px; }
+
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  .stat-card { padding: 1.5rem 1rem; }
+  .stat-number { font-size: 2rem; }
+
+  .expertise-grid { grid-template-columns: 1fr; }
+
+  .projects-grid { grid-template-columns: 1fr; }
+
+  .research-grid { grid-template-columns: 1fr; }
+
+  .pub-card { padding: 1.25rem; }
+
+  .collab-types { gap: .4rem; }
+
+  .footer-bottom { flex-direction: column; text-align: center; gap: .3rem; }
+
+  .hero-badges { display: none; }
+}
+
+/* ── Small Mobile ≤ 375px ────────────────────────────────────── */
+@media (max-width: 375px) {
+  html { font-size: 15px; }
+
+  .nav-inner { padding: 0 1rem; }
+  #hero .container,
+  #stats .container,
+  #about .container { padding: 0 1rem; }
+
+  h1 { font-size: 1.75rem; }
+
+  .stats-grid { grid-template-columns: 1fr 1fr; }
+
+  .hero-portrait-placeholder,
+  .hero-portrait { width: 150px; height: 150px; }
+
+  .hero-actions {
+    flex-direction: column;
+  }
+  .hero-actions .btn-primary-custom,
+  .hero-actions .btn-outline-custom {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ── Reduced Motion ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ── Print ───────────────────────────────────────────────────── */
+@media print {
+  #mainNav, #collaborate, .hero-shapes, .hero-grid,
+  .hero-portrait-ring::before, .hero-portrait-ring::after { display: none; }
+  body { background: #fff; font-size: 12pt; }
+  #hero { min-height: auto; padding: 1rem 0; }
+}
