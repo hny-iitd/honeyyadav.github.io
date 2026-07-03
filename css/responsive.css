@@ -27,7 +27,9 @@
   .hero-portrait-placeholder,
   .hero-portrait { width: 260px; height: 260px; }
 
-  .chip-iit, .chip-bcu, .chip-ukri { display: none; }
+  .chip-iit  { top: 5%; left: -2%; font-size: .65rem; padding: .3rem .6rem; }
+.chip-bcu  { bottom: 5%; right: -2%; font-size: .65rem; padding: .3rem .6rem; }
+.chip-ukri { display: none; }
 
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid > *:first-child { grid-column: span 2; }
