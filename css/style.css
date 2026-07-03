@@ -513,7 +513,6 @@ small, .caption { font-size: .78rem; }
   .chip-gtv,
   .chip-iim { display: none !important; }
 }
-
 /* ── Stats ─────────────────────────────────────────────────── */
 #stats {
   padding: 5rem 0;
