@@ -17,20 +17,16 @@
 @media (max-width: 1200px) {
   h1 { font-size: 2.5rem; }
   h2 { font-size: 1.9rem; }
-
   .nav-links a { font-size: .78rem; padding: .4rem .55rem; }
-
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
-
   .expertise-grid { grid-template-columns: repeat(2, 1fr); }
-
   .hero-portrait-placeholder,
   .hero-portrait { width: 260px; height: 260px; }
-
   .chip-iit  { top: 5%; left: -2%; font-size: .65rem; padding: .3rem .6rem; }
-.chip-bcu  { bottom: 5%; right: -2%; font-size: .65rem; padding: .3rem .6rem; }
-.chip-ukri { display: none; }
-
+  .chip-bcu  { display: none; }
+  .chip-ukri { top: 35%; left: -2%; font-size: .65rem; padding: .3rem .6rem; }
+  .chip-gtv  { top: 60%; left: -2%; font-size: .65rem; padding: .3rem .6rem; }
+  .chip-iim  { display: none; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid > *:first-child { grid-column: span 2; }
 }
@@ -39,28 +35,36 @@
 @media (max-width: 992px) {
   html { font-size: 17px; }
 
-  /* Nav: hide links, show toggle */
+  /* Nav */
   .nav-links { display: none; }
   .nav-socials, .nav-divider { display: none; }
   .nav-toggle { display: flex; }
 
-  /* Hero stacks */
+  /* Hero */
   #hero { padding: 4rem 0 3rem; min-height: auto; }
   #hero .row { flex-direction: column-reverse; }
   .hero-portrait-wrap { margin-bottom: 2.5rem; }
   .hero-statement { max-width: 100%; }
 
-  /* Portrait smaller on tablet */
+  /* Portrait */
   .hero-portrait-placeholder,
   .hero-portrait { width: 220px; height: 220px; }
-  .hero-portrait-ring::before, .hero-portrait-ring::after { display: none; }
+  .hero-portrait-ring::before,
+  .hero-portrait-ring::after { display: none; }
 
-  /* About stacks */
+  /* Hide all chips on tablet */
+  .chip-iit,
+  .chip-bcu,
+  .chip-ukri,
+  .chip-gtv,
+  .chip-iim { display: none; }
+
+  /* About */
   #about .row { flex-direction: column; }
   .about-img-wrap { margin-bottom: 3rem; }
   .about-credential { right: 1rem; bottom: -1rem; }
 
-  /* Grids → 2-col */
+  /* Grids */
   .research-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
 
@@ -76,13 +80,12 @@
 /* ── Mobile ≤ 768px ──────────────────────────────────────────── */
 @media (max-width: 768px) {
   html { font-size: 16px; }
-
   h1 { font-size: 2rem; }
   h2 { font-size: 1.6rem; }
   h3 { font-size: 1.2rem; }
-
   .section-header { margin-bottom: 2rem; }
 
+  /* Hero */
   #hero { padding: 3rem 0 2.5rem; }
   .hero-actions { gap: .5rem; }
   .hero-actions .btn-primary-custom,
@@ -91,48 +94,49 @@
     font-size: .82rem;
     padding: .62rem 1.1rem;
   }
-
   .hero-portrait-placeholder,
-  .hero-portrait { width: 180px; height: 180px; }
+  .hero-portrait { width: 200px; height: 200px; }
+  .hero-portrait-ring::before,
+  .hero-portrait-ring::after { display: none; }
+  .hero-badges { display: none; }
 
+  /* Hide all chips on mobile */
+  .chip-iit,
+  .chip-bcu,
+  .chip-ukri,
+  .chip-gtv,
+  .chip-iim { display: none; }
+
+  /* Grids */
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
   .stat-card { padding: 1.5rem 1rem; }
   .stat-number { font-size: 2rem; }
-
   .expertise-grid { grid-template-columns: 1fr; }
-
   .projects-grid { grid-template-columns: 1fr; }
-
   .research-grid { grid-template-columns: 1fr; }
 
+  /* Publications */
   .pub-card { padding: 1.25rem; }
 
+  /* Collab */
   .collab-types { gap: .4rem; }
 
+  /* Footer */
   .footer-bottom { flex-direction: column; text-align: center; gap: .3rem; }
-
-  .hero-badges { display: none; }
 }
 
 /* ── Small Mobile ≤ 375px ────────────────────────────────────── */
 @media (max-width: 375px) {
   html { font-size: 15px; }
-
   .nav-inner { padding: 0 1rem; }
   #hero .container,
   #stats .container,
   #about .container { padding: 0 1rem; }
-
   h1 { font-size: 1.75rem; }
-
   .stats-grid { grid-template-columns: 1fr 1fr; }
-
   .hero-portrait-placeholder,
-  .hero-portrait { width: 150px; height: 150px; }
-
-  .hero-actions {
-    flex-direction: column;
-  }
+  .hero-portrait { width: 160px; height: 160px; }
+  .hero-actions { flex-direction: column; }
   .hero-actions .btn-primary-custom,
   .hero-actions .btn-outline-custom {
     width: 100%;
