@@ -500,10 +500,11 @@ small, .caption { font-size: .78rem; }
   z-index: 2;
 }
 .hero-chip i { color: var(--primary); font-size: .9rem; }
-
 .chip-iit  { top: 15%; left: -10%; }
 .chip-bcu  { bottom: 22%; right: -6%; }
-.chip-ukri { top: 68%; left: -8%; }
+.chip-ukri { top: 45%; left: -8%; }
+.chip-gtv  { top: 62%; left: -8%; }
+.chip-iim  { top: 79%; left: -8%; }
 
 /* ── Stats ─────────────────────────────────────────────────── */
 #stats {
