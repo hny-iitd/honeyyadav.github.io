@@ -500,11 +500,11 @@ small, .caption { font-size: .78rem; }
   z-index: 2;
 }
 .hero-chip i { color: var(--primary); font-size: .9rem; }
-.chip-iit  { top: 5%;  left: -22%; }
-.chip-bcu  { top: 5%;  right: -22%; }
-.chip-ukri { top: 38%; left: -26%; }
-.chip-gtv  { top: 62%; left: -26%; }
-.chip-iim  { bottom: 5%; left: -22%; }
+.chip-iit  { top: -8%;   left: 50%; transform: translateX(-50%); }
+.chip-bcu  { display: none; }
+.chip-ukri { top: 50%;  right: -30%; transform: translateY(-50%); }
+.chip-gtv  { bottom: -8%; left: 50%; transform: translateX(-50%); }
+.chip-iim  { top: 50%;  left: -32%; transform: translateY(-50%); }
 
 /* ── Stats ─────────────────────────────────────────────────── */
 #stats {
