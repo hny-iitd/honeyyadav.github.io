@@ -506,6 +506,14 @@ small, .caption { font-size: .78rem; }
 .chip-gtv  { bottom: -8%; left: 50%; transform: translateX(-50%); }
 .chip-iim  { top: 50%;  left: -32%; transform: translateY(-50%); }
 
+@media (max-width: 992px) {
+  .chip-iit,
+  .chip-bcu,
+  .chip-ukri,
+  .chip-gtv,
+  .chip-iim { display: none !important; }
+}
+
 /* ── Stats ─────────────────────────────────────────────────── */
 #stats {
   padding: 5rem 0;
