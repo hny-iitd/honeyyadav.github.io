@@ -5,18 +5,18 @@
 
 /* ── CSS Variables ─────────────────────────────────────────── */
 :root {
-  --primary:     #1E3A5F;
-  --accent:      #C9963A;
-  --bg:          #F8FAFC;
+  --primary:     #6B4226;
+  --accent:      #C8A97E;
+  --bg:          #FAF6F1;
   --card:        #FFFFFF;
-  --text:        #475569;
-  --heading:     #0F172A;
-  --border:      #E2E8F0;
-  --primary-dark:#152B47;
-  --accent-light:#FDF6EC;
-  --shadow-sm:   0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.04);
-  --shadow-md:   0 4px 16px rgba(30,58,95,.10);
-  --shadow-lg:   0 8px 32px rgba(30,58,95,.14);
+  --text:        #5C4A3A;
+  --heading:     #2C1A0E;
+  --border:      #E8DDD4;
+  --primary-dark:#4A2C18;
+  --accent-light:#F5EDE3;
+  --shadow-sm:   0 1px 3px rgba(107,66,38,.08), 0 1px 2px rgba(107,66,38,.04);
+  --shadow-md:   0 4px 16px rgba(107,66,38,.12);
+  --shadow-lg:   0 8px 32px rgba(107,66,38,.16);
   --radius:      12px;
   --radius-sm:   8px;
   --transition:  .25s cubic-bezier(.4,0,.2,1);
