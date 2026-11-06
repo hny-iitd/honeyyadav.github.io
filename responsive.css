@@ -1,0 +1,98 @@
+/* ============================================================
+   Dr. Honey Yadav — Minimal Academic Portfolio
+   css/responsive.css
+   ============================================================ */
+
+/* ── Tablet ≤ 860px ──────────────────────────────────────────── */
+@media (max-width: 860px) {
+  /* Nav */
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+
+  /* About: stack sidebar above content */
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .about-sidebar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.25rem 1.5rem;
+    text-align: left;
+    align-items: start;
+  }
+  .about-photo-wrap {
+    grid-row: span 3;
+    width: 120px;
+    height: 120px;
+    margin: 0;
+  }
+  .sidebar-name { font-size: 1rem; }
+  .sidebar-affiliations {
+    grid-column: 2;
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .social-pills { justify-content: flex-start; }
+
+  /* Research */
+  .research-grid { grid-template-columns: 1fr; }
+
+  /* Teaching */
+  .teaching-grid { grid-template-columns: 1fr; }
+
+  /* Advisory */
+  .advisory-grid { grid-template-columns: 1fr; }
+}
+
+/* ── Mobile ≤ 600px ──────────────────────────────────────────── */
+@media (max-width: 600px) {
+  html { font-size: 16px; }
+
+  .about-sidebar {
+    grid-template-columns: 1fr;
+  }
+  .about-photo-wrap {
+    grid-row: auto;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .sidebar-name,
+  .sidebar-title,
+  .social-pills { text-align: center; justify-content: center; }
+  .sidebar-affiliations { text-align: left; }
+
+  .pub-item {
+    grid-template-columns: 1fr;
+    gap: .4rem;
+  }
+  .pub-year { font-size: .75rem; }
+
+  .update-item {
+    grid-template-columns: 1fr;
+    gap: .3rem;
+  }
+  .update-date { font-size: .75rem; }
+
+  .footer-inner { flex-direction: column; align-items: flex-start; gap: .75rem; }
+}
+
+/* ── Reduced Motion ──────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Print ───────────────────────────────────────────────────── */
+@media print {
+  #mainNav, #footer { display: none; }
+  body { background: #fff; font-size: 11pt; }
+  section { padding: 1rem 0; }
+  .about-layout { grid-template-columns: 160px 1fr; gap: 1.5rem; }
+  .about-photo-wrap { width: 130px; height: 130px; }
+}
