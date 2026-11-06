@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Honey Yadav — Academic Portfolio</title>
+  <meta name="description" content="Dr. Honey Yadav — Researcher in AI, Fraud Detection, and Financial Crime. PhD IIT Delhi. UKRI Funded. UK Global Talent." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════════════════════════ -->
+  <nav id="mainNav" role="navigation" aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="#top">Dr. Honey Yadav</a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#teaching">Teaching</a></li>
+        <li><a href="#advisory">Advisory</a></li>
+        <li><a href="#updates">Updates</a></li>
+      </ul>
+
+      <!-- Mobile toggle -->
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav-mobile" role="menu">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#teaching">Teaching</a>
+      <a href="#advisory">Advisory</a>
+      <a href="#updates">Updates</a>
+    </div>
+  </nav>
+
+  <!-- ══ MAIN ═════════════════════════════════════════════════════ -->
+  <main id="top">
+
+    <!-- ── ABOUT ──────────────────────────────────────────────── -->
+    <section id="about" class="section-about">
+      <div class="container">
+        <div class="about-layout">
+
+          <!-- Left: photo + social pills -->
+          <aside class="about-sidebar">
+            <div class="about-photo-wrap">
+              <img src="images/profile.jpg" alt="Dr. Honey Yadav" class="about-photo" loading="lazy" />
+            </div>
+
+            <h1 class="sidebar-name">Dr. Honey Yadav</h1>
+            <p class="sidebar-title">Researcher · AI &amp; Financial Crime</p>
+
+            <div class="social-pills">
+              <a href="documents/CV_HoneyYadav.pdf" class="pill" download>
+                <i class="bi bi-file-earmark-text"></i> CV
+              </a>
+              <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" class="pill" target="_blank" rel="noopener">
+                <i class="bi bi-mortarboard"></i> Scholar
+              </a>
+              <a href="mailto:yadav.honey19933@gmail.com" class="pill">
+                <i class="bi bi-envelope"></i> Email
+              </a>
+              <a href="https://www.linkedin.com/in/dr-honey-yadav/" class="pill" target="_blank" rel="noopener">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+              <a href="https://github.com/hny-iitd" class="pill" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+            </div>
+
+            <div class="sidebar-affiliations">
+              <div class="affil-item">
+                <span class="affil-dot"></span>
+                <span>PhD · IIT Delhi</span>
+              </div>
+              <div class="affil-item">
+                <span class="affil-dot"></span>
+                <span>Visiting Scholar · Aston University</span>
+              </div>
+              <div class="affil-item">
+                <span class="affil-dot"></span>
+                <span>UKRI Funded Researcher</span>
+              </div>
+              <div class="affil-item">
+                <span class="affil-dot"></span>
+                <span>UK Global Talent Visa</span>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right: bio + upcoming talks -->
+          <div class="about-content">
+            <h2 class="section-title">About</h2>
+
+            <div class="bio">
+              <p>
+                I am a researcher working at the intersection of <strong>artificial intelligence, fraud detection,
+                and financial crime</strong>. My work focuses on building explainable and responsible AI systems
+                that can be deployed in high-stakes domains including banking, insurance, and digital payments.
+              </p>
+              <p>
+                I completed my PhD at <strong>IIT Delhi</strong>, where I developed graph-based and deep learning
+                approaches for anomaly and fraud detection. I am currently a Visiting Scholar in the
+                <strong>Fraud Research Group at Aston University</strong>, supported by UKRI funding, working
+                on AI-driven solutions to financial crime with academic and industry partners.
+              </p>
+              <p>
+                My broader interests span responsible AI, synthetic data generation, explainability (XAI),
+                and the application of machine learning to complex real-world problems. I am passionate
+                about bridging rigorous research with meaningful societal impact.
+              </p>
+            </div>
+
+            <!-- Upcoming Talks -->
+            <div class="talks-block">
+              <h3 class="subsection-title">Upcoming Talks</h3>
+
+              <div class="talk-item">
+                <div class="talk-meta">
+                  <span class="talk-date">20 Nov 2026</span>
+                  <span class="talk-loc"><i class="bi bi-geo-alt"></i> Cardiff Business School, Cardiff University</span>
+                </div>
+                <p class="talk-title">
+                  Inaugural GW4 Business Analytics &amp; AI (BAAI) Conference
+                </p>
+                <p class="talk-desc">
+                  Presenting research on AI-driven fraud detection and responsible machine learning
+                  in financial services at the first GW4 BAAI Conference.
+                </p>
+              </div>
+            </div>
+
+          </div><!-- /about-content -->
+        </div><!-- /about-layout -->
+      </div>
+    </section>
+
+    <!-- ── RESEARCH ────────────────────────────────────────────── -->
+    <section id="research" class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Research</h2>
+        <p class="section-lead">
+          My research focuses on three interconnected themes: fraud detection, explainable AI, and
+          responsible deployment of machine learning in financial and regulatory contexts.
+        </p>
+
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="research-icon"><i class="bi bi-shield-check"></i></div>
+            <h3>Fraud Detection &amp; Financial Crime</h3>
+            <p>
+              Graph neural networks, anomaly detection, and behavioural analytics applied to
+              payment fraud, identity theft, and money laundering detection at scale.
+            </p>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="bi bi-lightbulb"></i></div>
+            <h3>Explainable AI (XAI)</h3>
+            <p>
+              Developing interpretable models and post-hoc explanation methods that make
+              AI decisions transparent and auditable for regulators, businesses, and end users.
+            </p>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="bi bi-diagram-3"></i></div>
+            <h3>Graph &amp; Deep Learning</h3>
+            <p>
+              Graph-based representation learning for relational fraud patterns, including
+              heterogeneous graphs, temporal dynamics, and semi-supervised detection methods.
+            </p>
+          </div>
+
+          <div class="research-card">
+            <div class="research-icon"><i class="bi bi-database-check"></i></div>
+            <h3>Synthetic Data &amp; Privacy</h3>
+            <p>
+              Generative approaches for synthetic financial data to enable model training
+              while preserving privacy and satisfying regulatory constraints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PUBLICATIONS ───────────────────────────────────────── -->
+    <section id="publications">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <p class="section-lead">Selected peer-reviewed publications. Full list on <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener">Google Scholar</a>.</p>
+
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <div class="pub-year">2024</div>
+            <div class="pub-body">
+              <p class="pub-title">Graph Neural Networks for Financial Fraud Detection: A Survey and Benchmarking Study</p>
+              <p class="pub-authors">Yadav, H., et al.</p>
+              <p class="pub-venue"><em>Expert Systems with Applications</em></p>
+              <div class="pub-links">
+                <a href="#" class="pub-link">PDF</a>
+                <a href="#" class="pub-link">DOI</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <p class="pub-title">Explainable Anomaly Detection for Credit Card Fraud Using Attention-Based Models</p>
+              <p class="pub-authors">Yadav, H., et al.</p>
+              <p class="pub-venue"><em>IEEE Transactions on Neural Networks and Learning Systems</em></p>
+              <div class="pub-links">
+                <a href="#" class="pub-link">PDF</a>
+                <a href="#" class="pub-link">DOI</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-year">2023</div>
+            <div class="pub-body">
+              <p class="pub-title">Semi-Supervised Graph Learning for Money Laundering Detection in Transaction Networks</p>
+              <p class="pub-authors">Yadav, H., et al.</p>
+              <p class="pub-venue"><em>Knowledge-Based Systems</em></p>
+              <div class="pub-links">
+                <a href="#" class="pub-link">PDF</a>
+                <a href="#" class="pub-link">DOI</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-year">2022</div>
+            <div class="pub-body">
+              <p class="pub-title">Synthetic Transaction Data Generation for Fraud Detection with Conditional GANs</p>
+              <p class="pub-authors">Yadav, H., et al.</p>
+              <p class="pub-venue"><em>Pattern Recognition Letters</em></p>
+              <div class="pub-links">
+                <a href="#" class="pub-link">PDF</a>
+                <a href="#" class="pub-link">DOI</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TEACHING ────────────────────────────────────────────── -->
+    <section id="teaching" class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Teaching</h2>
+        <p class="section-lead">
+          I am committed to teaching that connects theory to real-world practice in AI, data science,
+          and financial technology.
+        </p>
+
+        <div class="teaching-grid">
+          <div class="teaching-item">
+            <h3>Machine Learning for Finance</h3>
+            <p class="teaching-role">Guest Lecturer · Aston University</p>
+            <p>Applied ML techniques for credit risk, fraud detection, and algorithmic trading. Covers supervised, unsupervised, and reinforcement learning approaches tailored for financial data.</p>
+          </div>
+
+          <div class="teaching-item">
+            <h3>Data Science &amp; Analytics</h3>
+            <p class="teaching-role">Lecturer · Birmingham City University</p>
+            <p>Foundational and advanced data science including Python programming, statistical modelling, data visualisation, and end-to-end project delivery for business applications.</p>
+          </div>
+
+          <div class="teaching-item">
+            <h3>AI Ethics &amp; Responsible Technology</h3>
+            <p class="teaching-role">Module Contributor · BCU</p>
+            <p>Covers bias, fairness, transparency, and accountability in AI systems, with case studies from banking, healthcare, and law enforcement.</p>
+          </div>
+
+          <div class="teaching-item">
+            <h3>Research Methods for Computing</h3>
+            <p class="teaching-role">Supervisor · PhD &amp; MSc level</p>
+            <p>Supervision of postgraduate dissertations and research projects in AI, cybersecurity, and digital forensics. Mentoring on literature review, methodology, and academic writing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── ADVISORY ────────────────────────────────────────────── -->
+    <section id="advisory">
+      <div class="container">
+        <h2 class="section-title">Advisory</h2>
+        <p class="section-lead">
+          I work with organisations navigating the intersection of AI, risk, compliance, and financial crime.
+        </p>
+
+        <div class="advisory-grid">
+          <div class="advisory-card">
+            <div class="advisory-icon"><i class="bi bi-graph-up-arrow"></i></div>
+            <h3>AI Strategy &amp; Deployment</h3>
+            <p>
+              Supporting executives and technology teams to design, evaluate, and responsibly
+              deploy AI systems in regulated financial environments.
+            </p>
+          </div>
+
+          <div class="advisory-card">
+            <div class="advisory-icon"><i class="bi bi-search"></i></div>
+            <h3>Fraud Risk &amp; Detection</h3>
+            <p>
+              Advising on fraud frameworks, detection model selection, alert management,
+              and the operational integration of AI-driven fraud tools.
+            </p>
+          </div>
+
+          <div class="advisory-card">
+            <div class="advisory-icon"><i class="bi bi-patch-check"></i></div>
+            <h3>Regulatory &amp; Compliance AI</h3>
+            <p>
+              Guidance on model explainability, bias auditing, and documentation to meet
+              UK FCA, EU AI Act, and international regulatory standards.
+            </p>
+          </div>
+
+          <div class="advisory-card">
+            <div class="advisory-icon"><i class="bi bi-people"></i></div>
+            <h3>Research Partnerships</h3>
+            <p>
+              Facilitating academic-industry collaborations, grant applications, and
+              knowledge transfer partnerships in AI and FinTech.
+            </p>
+          </div>
+        </div>
+
+        <div class="advisory-note">
+          <p>
+            Interested in working together?
+            <a href="mailto:yadav.honey19933@gmail.com">Get in touch</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── UPDATES ─────────────────────────────────────────────── -->
+    <section id="updates" class="section-alt">
+      <div class="container">
+        <h2 class="section-title">Updates</h2>
+
+        <div class="updates-list">
+
+          <div class="update-item">
+            <span class="update-date">Nov 2026</span>
+            <div class="update-body">
+              <p>Speaking at the inaugural <strong>GW4 Business Analytics &amp; AI (BAAI) Conference</strong> at Cardiff Business School, Cardiff University.</p>
+            </div>
+          </div>
+
+          <div class="update-item">
+            <span class="update-date">Oct 2026</span>
+            <div class="update-body">
+              <p>New paper submitted to <em>Expert Systems with Applications</em> on graph-based fraud detection with federated learning.</p>
+            </div>
+          </div>
+
+          <div class="update-item">
+            <span class="update-date">Sep 2026</span>
+            <div class="update-body">
+              <p>Joined the <strong>Fraud Research Group at Aston University</strong> as Visiting Scholar, supported by UKRI funding.</p>
+            </div>
+          </div>
+
+          <div class="update-item">
+            <span class="update-date">Jul 2026</span>
+            <div class="update-body">
+              <p>Invited talk on explainable fraud detection at a UK FinTech industry roundtable, London.</p>
+            </div>
+          </div>
+
+          <div class="update-item">
+            <span class="update-date">Jun 2026</span>
+            <div class="update-body">
+              <p>Paper accepted at <em>Knowledge-Based Systems</em> on semi-supervised graph learning for transaction monitoring.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ═══════════════════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">&copy; 2026 Dr. Honey Yadav. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="mailto:yadav.honey19933@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/dr-honey-yadav/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://github.com/hny-iitd" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://scholar.google.com/citations?user=YOUR_SCHOLAR_ID" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="bi bi-mortarboard"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
